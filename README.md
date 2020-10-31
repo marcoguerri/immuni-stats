@@ -5,6 +5,6 @@ Usage:
 
 ```
 $ go get github.com/marcoguerri/immuni-stats
-$ go run $GOPATH/github.com/marcoguerri/immuni-stats/main.go
+$ go run $GOPATH/src/github.com/marcoguerri/immuni-stats/main.go
 ```
 
