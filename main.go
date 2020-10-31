@@ -10,7 +10,7 @@ import (
 	"log"
 	"net/http"
 
-	en "immuni-stats/exposure-notification-interface"
+	en "github.com/marcoguerri/immuni-stats/exposure-notification-interface"
 	"time"
 )
 
@@ -125,6 +125,7 @@ func main() {
 	}
 
 	log.Printf("total number of keys: %d", total)
+	log.Printf("unique number of reports assuming 14 TEK per report: %d", total/14)
 	log.Printf("total time window: %dd %dh", int(lastTimestamp.Sub(firstTimestamp).Hours()/24), int(lastTimestamp.Sub(firstTimestamp).Hours())%24)
 
 }
