@@ -95,7 +95,7 @@ func main() {
 				TEKs, err := getTEKs(data)
 				for _, k := range TEKs.Keys {
 					if *k.RollingPeriod != int32(144) {
-						log.Printf("!! key with rolling period != 144 !!")
+						log.Printf("!! key with rolling period != 144 !! (%d)", *k.RollingPeriod)
 					}
 
 				}
